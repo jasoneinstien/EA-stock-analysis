@@ -24,33 +24,51 @@ da = []
 
 for i in data:
     op.append(data["Open"].tolist())
-    cl.append(data["Close"].tolist())
+   # cl.append(data["Close"].tolist())
     low.append(data["Low"].tolist())
     high.append(data["High"].tolist())
 
 
 nodate = data["Date"].count()
 
-print(nodate)
-
 for i in range(nodate):
     temp = toint(data["Date"][i])
     da.append(temp)
+    cl.append(data["Close"][i])
 
-agdata = pd.DataFrame
+agdate = pd.DataFrame(list(zip(da , cl)) , columns = ["DATE" , "CLOSE"])
+
+
+
+#basic graph
+
+#dat-close graph
+
+def date_close():
+    plt.plot(agdate["DATE"] , agdate["CLOSE"])
+    plt.show()
+
 
 #chart creating
 
 
 #k-line chart
 
+#20days mean graph
+twenty_days_mean = []
+for i in range(nodate):
+
+
+
+#30 days mean graph
+
+#50 days mmean graph
+
+
+
 #candle chart
 
 #volume chart
 
-
 #testing
-#plt.plot(low , da)
-#plt.plot(low , high)
-#plt.show()
-
+print(agdate.iloc[0:10])
