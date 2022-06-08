@@ -45,6 +45,11 @@ for i in range(nodate):
 agdate = pd.DataFrame(list(zip(da , cl)) , columns = ["DATE" , "CLOSE"])
 
 
+#testcase
+
+
+
+
 
 #basic graph
 def basic():
