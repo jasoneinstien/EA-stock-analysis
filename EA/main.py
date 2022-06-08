@@ -43,7 +43,8 @@ agdate = pd.DataFrame(list(zip(da , cl)) , columns = ["DATE" , "CLOSE"])
 
 
 #basic graph
-
+def basic():
+    pass
 #dat-close graph
 
 def date_close():
