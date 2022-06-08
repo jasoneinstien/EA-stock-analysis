@@ -50,6 +50,7 @@ agdate = pd.DataFrame(list(zip(da , cl)) , columns = ["DATE" , "CLOSE"])
 
 
 #input data
+#ie) stock data
 #basic graph
 def basic():
     pass
