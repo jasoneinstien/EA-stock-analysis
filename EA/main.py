@@ -4,6 +4,10 @@ import matplotlib.pyplot as plt
 import datetime
 import tensorflow as tf
 
+def testing(ts):
+    add = ts
+    for i in range ts:
+        pass
 
 def toint(da):
     temp = ""
